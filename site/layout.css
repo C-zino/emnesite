@@ -1,0 +1,372 @@
+/* ALT */
+
+.forside-top {
+  background: url(../images/forside.webp) no-repeat center center/cover;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+/* WEBSITE LAYOUT */
+
+@media (width >= 768px) {
+  /* Nav Bar */
+
+  .nav-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    z-index: 1000;
+  }
+
+  .search-container,
+  .dropdown {
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown {
+    margin-top: -40px;
+  }
+
+  .dropdown-content {
+    margin-top: 250px;
+  }
+
+  .search-container {
+    justify-content: flex-start;
+  }
+
+  .dropdown {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .logo_container {
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+  }
+}
+
+  /* Nav Bar */
+
+  /* Flex box forside */
+  .explore-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #e7e8dd;
+    border-radius: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    max-width: max-content;
+    margin-inline: auto;
+  }
+
+  .explore {
+    background: #ffffff;
+    border: 1px solid #efc7cf;
+    padding: 40px;
+    border-radius: 60px;
+    width: 250px;
+    height: 280px;
+    transition: transform 0.3s ease;
+  }
+
+  .explore:hover {
+    transform: translateY(-5px);
+  }
+
+  .explore h3 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #71816d;
+  }
+  /* Flex box forside */
+
+  /* GRID - TESTSITE */
+/* WEBSITE */
+@media (width <= 1570px){
+.image-layer img {
+  width: 100%;
+  max-width: 700px;
+}
+}
+
+  @media (width >= 1220px) {
+  .top {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 600px 600px 1fr;
+  }
+
+  .test-header {
+    grid-column: 1 / 3;
+    background-color: #e7e8dd;
+    text-align: left;
+    padding-left: 130px;
+    padding-top: 100px;
+  }
+
+  .question {
+    text-align: left;
+    padding-left: 140px;
+  }
+
+  .botton_2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (width >= 1570px) {
+.image-layer {
+    position: absolute;
+    position: fixed;
+    top: 250px;
+    left: 970px;
+    z-index: 10; 
+    width: 600px;
+}
+
+.image-layer img {
+    width: 100%; 
+    height: auto; 
+}
+}
+
+
+
+/* WEBSITE */
+
+/* MOBILESITE */
+
+@media (width <= 1219px) {
+  .top {
+    margin-bottom: 50px;
+  }
+
+  .test-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e8dd;
+  padding: 30px;
+  padding-top: 100px;
+  }
+
+  .image-layer {
+    padding-bottom: 50px;
+   }
+
+}
+/* MOBILESITE */
+
+  /* GRID - TESTSITE */
+
+/* MOBILESITE LAYOUT */
+
+@media (width <= 767px) {
+  /* NAV */
+  .search-container {
+    display: none;
+  }
+
+  .nav_container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .logo_container {
+    text-align: center;
+  }
+
+  .dropbtn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .dropdown .dropbtn {
+    margin-top: -50px;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* NAV */
+
+  /* EXPLORE */
+  .explore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .explore {
+    background: #ffffff;
+    border: 1px solid #efc7cf;
+    margin-bottom: 50px;
+    padding: 35px;
+    border-radius: 60px;
+    width: 300px;
+    height: 280px;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  /* EXPLORE */
+}
+
+/*        KEY INDGREDIENTS - SITE        */
+
+/* WEBSITE */
+@media (width >= 768px) {
+  .key_ingredients-top {
+    background: url(../images/ki.webp) no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: -20px;
+    margin-right: -20px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .key_ingredients-top h1 {
+    font-size: 47px;
+    font-weight: 1000;
+  }
+
+  .key {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .key_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid: 1fr 1fr;
+  }
+
+  .key_container p {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .key1 {
+    grid-column: 1;
+  }
+
+  .key2 {
+    grid-column: 2;
+  }
+}
+/* WEBSITE */
+
+/* MOBILESITE */
+@media (width <= 767px) {
+  .key_ingredients-top {
+    background: url(../images/ki.webp) no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: -20px;
+    margin-right: -20px;
+    color: #5f715d;
+  }
+}
+
+/* MOBILESITE */
+/*        KEY INDGREDIENTS - SITE - SLUT       */
+
+/*        BLOG - SITE       */
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: transform 0.4s ease-in-out;
+  padding: 20px 0;
+  background-color: #e7e8dd;
+}
+
+.blog {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  flex-direction: column;
+}
+
+.blog_nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* WEBSITE */
+@media (width >= 768px) {
+
+.fav_produkt {
+  max-width: 200px;
+  padding: 30px;
+}
+
+.fav_produkt img {
+  border: 1px solid #5f715d;
+  min-width: 200px;
+
+}
+
+.fav_produkt_flex {
+  display: flex;
+  flex-direction: row;
+}
+}
+
+
+
+/* WEBSITE */
+
+/* BLOG - SITE - SLUT */

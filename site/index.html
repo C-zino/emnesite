@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jinju Glow</title>
+    <link rel="icon" href="../images/favicon-16x16.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_container">
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button class="search-btn">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/149/149852.png"
+                alt="Search Icon"
+                class="search-icon"
+              />
+            </button>
+          </div>
+          <div class="nav_mobile">
+            <div class="logo_container">
+              <a href="../site/index.html">
+                <img src="../images/logo.webp" alt="logo" class="logo" />
+              </a>
+            </div>
+            <div class="dropdown">
+              <div class="dropbtn">
+                <div class="ham-bar bar-top"></div>
+                <div class="ham-bar bar-mid"></div>
+                <div class="ham-bar bar-bottom"></div>
+              </div>
+              <div class="dropdown-content">
+                <a href="../site/index.html">JINJU GLOW - HJEM</a>
+                <a href="../site/key_ingredients.html">KEY INGREDIENTS</a>
+                <a href="../site/blog.html">BLOG</a>
+                <a href="../site/test.html">HUDTYPE TEST</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="forside-top">
+        <h1>KNOW YOUR GLOW</h1>
+        <p>
+          Lær din hud at kende. <br />
+          Find ud af hvilken hudtype du har, og skræddersy din rutine.
+        </p>
+        <a class="button" href="test.html">TAG TESTEN HER</a>
+      </div>
+
+      <section class="intro">
+        <h2>Koreansk hudpleje</h2>
+        <h3>VELKOMMEN TIL JINJU GLOW</h3>
+        <h4>- Din Guide til Koreansk Hudpleje</h4>
+        <p>
+          Opdag hemmelighederne bag den strålende, flotte hud med koreanske
+          hudplejeprodukter.<br />
+          Hos Jinju Glow hjælper vi dig med at finde de rette produkter og
+          rutiner til din hudtype, så du kan opnå din naturlige glød.<br />
+          Fra dybderens til fugtgivende essenser og nærende serummer – vi guider
+          dig trin for trin mod din perfekte hudplejerutine.
+        </p>
+      </section>
+
+      <section class="middel">
+        <p class="h2-lille">GÅ PÅ OPDAGELSE</p>
+        <div class="explore-container">
+          <div class="explore">
+            <h3>Key Ingredients:</h3>
+            <p>
+              Opdag de nøgleingredienser, der gør koreansk hudpleje så effektiv.
+              Lær, hvordan aktive stoffer som hyaluronsyre, niacinamid og
+              centella asiatica arbejder for at forbedre din huds sundhed og
+              udseende.
+            </p>
+            <a href="key_ingredients.html">LÆS MERE HER</a>
+          </div>
+          <div class="explore">
+            <h3>Blog:</h3>
+            <p>
+              Følg vores trin-for-trin guide til at opbygge den perfekte
+              koreanske hudplejerutine. Lær om koreanske hudplejeprodukter og
+              fordyb dig i en verden af hudpleje. Dyk ned i en verden af
+              hudpleje og lær din hud at kende.
+            </p>
+            <a href="blog.html">LÆS MERE HER</a>
+          </div>
+          <div class="explore">
+            <h3>Hudtype Test:</h3>
+            <p>
+              Find ud af, hvilken hudtype du har, og få skræddersyede
+              anbefalinger til din personlige hudplejerutine.
+              <br />
+              Tag testen, og lær, hvordan du bedst plejer din hud for at opnå en
+              sund og strålende glød.
+            </p>
+            <a href="test.html">LÆS MERE HER</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social">
+        <a
+          href="https://www.instagram.com/c_zino/"
+          alt="Instagram"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.facebook.com/celina.sguazzino/"
+          alt="facebook"
+          class="fa fa-facebook"
+        ></a>
+      </div>
+      <p>&#169;Celina Sguazzino</p>
+    </footer>
+
+    <script>
+      // Select the button and the parent dropdown div
+      const dropdownBtn = document.querySelector(".dropbtn");
+      const dropdown = document.querySelector(".dropdown");
+
+      // Add event listener for button click
+      dropdownBtn.addEventListener("click", function () {
+        // Toggle the class 'dropdown-open' on the parent div
+        dropdown.classList.toggle("dropdown-open");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jinju Glow</title>
+    <link rel="icon" href="../images/favicon-16x16.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_container">
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button class="search-btn">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/149/149852.png"
+                alt="Search Icon"
+                class="search-icon"
+              />
+            </button>
+          </div>
+          <div class="logo_container">
+            <a href="../site/index.html">
+              <img src="../images/logo.webp" alt="logo" class="logo" />
+            </a>
+          </div>
+          <div class="dropdown">
+            <div class="dropbtn">
+              <div class="ham-bar bar-top"></div>
+              <div class="ham-bar bar-mid"></div>
+              <div class="ham-bar bar-bottom"></div>
+            </div>
+            <div class="dropdown-content">
+              <a href="../site/index.html">JINJU GLOW - HJEM</a>
+              <a href="../site/key_ingredients.html">KEY INGREDIENTS</a>
+              <a href="../site/blog.html">BLOG</a>
+              <a href="../site/test.html">HUDTYPE TEST</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="top">
+        <div class="test-header">
+          <div class="image-layer">
+            <img src="../images/hudtest.webp" alt="test_image" />
+          </div>
+          <br />
+          <br />
+          <div class="test_top">
+            <h1>KNOW YOUR GLOW</h1>
+            <h2>Find din hudtype - Nøglen til perfekt hudpleje</h2>
+            <hr />
+          </div>
+          <div class="quiz">
+            <form id="quiz-form">
+              <div>
+                <!-- Spørgsmål 1 -->
+                <div class="question">
+                  <p>Hvordan føles din hud generelt i løbet af dagen?</p>
+                  <label
+                    ><input type="radio" name="q1" value="A" /> Blød og
+                    behagelig, uanset tidspunkt på dagen.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q1" value="B" /> Stram og nogle
+                    gange ubehagelig.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q1" value="C" /> Fedtet, især
+                    efter nogle timer.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q1" value="D" /> Tør på kinderne
+                    og fedtet i T-zonen.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 2 -->
+                <div class="question">
+                  <p>Hvordan ser din hud ud, når du står op om morgenen?</p>
+                  <label
+                    ><input type="radio" name="q2" value="A" /> Ser frisk og
+                    jævn ud.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q2" value="B" /> Stram og
+                    eventuelt med lette skællet områder.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q2" value="C" /> Fedtet, især i
+                    T-zonen.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q2" value="D" /> Fedtet i T-zonen
+                    og normal/tør på kinderne.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 3 -->
+                <div class="question">
+                  <p>Hvordan reagerer din hud efter bad eller ansigtsrens?</p>
+                  <label
+                    ><input type="radio" name="q3" value="A" /> Forbliver glat
+                    og uden nogen særlig reaktion.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q3" value="B" /> Strammer straks
+                    og føles ubehagelig.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q3" value="C" /> Bliver hurtigt
+                    meget fedtet igen.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q3" value="D" /> Tør på nogle
+                    områder og fedtet på andre.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 4 -->
+                <div class="question">
+                  <p>Hvordan ser dine porer ud?</p>
+                  <label
+                    ><input type="radio" name="q4" value="A" /> Små og næsten
+                    usynlige.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q4" value="B" /> Meget små, men
+                    kan se tilstoppede ud.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q4" value="C" /> Store, især på
+                    næse og pande.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q4" value="D" /> Store i T-zonen
+                    og små på kinderne.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 5 -->
+                <div class="question">
+                  <p>
+                    Hvordan opfører din hud sig i løbet af
+                    menstruationscyklussen?
+                    <br />(kun for kvinder)
+                  </p>
+                  <label
+                    ><input type="radio" name="q5" value="A" /> Ingen
+                    ændringer.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q5" value="B" /> Bliver endnu
+                    tørrere og mere sensitiv.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q5" value="C" /> Mere tendens til
+                    bumser og fedtet hud.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q5" value="D" /> Bumser i
+                    T-zonen, men tørhed på kinderne.</label
+                  >
+                  <br />
+                  <label
+                    ><input type="radio" name="q5" value="none" /> Jeg har ikke
+                    en cyklus.
+                  </label>
+                </div>
+
+                <!-- Spørgsmål 6 -->
+                <div class="question">
+                  <p>Hvordan føles din hud i varme og fugtige omgivelser?</p>
+                  <label
+                    ><input type="radio" name="q6" value="A" /> Ingen særlig
+                    reaktion, forbliver normal.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q6" value="B" /> Bliver ofte tør
+                    og stram, især efter sol.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q6" value="C" /> Meget fedtet og
+                    skinnende, som om porerne åbner sig.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q6" value="D" /> Fedtet i T-zonen
+                    og tør på kinderne.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 7 -->
+                <div class="question">
+                  <p>Hvordan opfører din hud sig om vinteren?</p>
+                  <label
+                    ><input type="radio" name="q7" value="A" /> Ingen større
+                    forskel.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q7" value="B" /> Meget tør og
+                    nogle gange med synlig skællethed.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q7" value="C" /> En smule mere
+                    fedtet på grund af varmere, tør luft indendørs.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q7" value="D" /> Tør på kinderne
+                    og fedtet i T-zonen.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 8 -->
+                <div class="question">
+                  <p>Hvordan ser din hud ud under stress?</p>
+                  <label
+                    ><input type="radio" name="q8" value="A" /> Forbliver den
+                    samme uden problemer.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q8" value="B" /> Bliver meget tør
+                    og føles ubehagelig.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q8" value="C" /> Meget fedtet og
+                    får nemt bumser.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q8" value="D" /> Fedtet i
+                    T-zonen, men ellers normal.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 9 -->
+                <div class="question">
+                  <p>
+                    Hvordan ser din hud ud i et spejl uden makeup i direkte lys?
+                  </p>
+                  <label
+                    ><input type="radio" name="q9" value="a" /> Glat, jævn, og
+                    hverken tør eller fedtet.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q9" value="B" /> Ser mat og
+                    eventuelt skællet ud..</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q9" value="C" /> Skinnende, især
+                    i panden og næseområdet.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q9" value="D" /> Fedtet i panden
+                    og næsen, men normal eller tør på kinderne.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 10-->
+                <div class="question">
+                  <p>
+                    Hvordan reagerer din hud på forskellige produkter som
+                    cremer,
+                    <br />tonere eller serum?
+                  </p>
+                  <label
+                    ><input type="radio" name="q10" value="A" /> Kan bruge de
+                    fleste produkter uden problemer.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q10" value="B" /> Bliver hurtigt
+                    irriteret, rød eller tør.</label
+                  >
+                  <br />
+                  <label
+                    ><input type="radio" name="q10" value="C" /> Reagerer ofte
+                    med øget fedtethed og bumser.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q10" value="D" /> T-zonen kan
+                    reagere med fedtethed, mens kinderne føles tørre.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 11 -->
+                <div class="question">
+                  <p>
+                    Hvordan føles din hud, når du ikke bruger fugtighedscreme?
+                  </p>
+                  <label
+                    ><input type="radio" name="q11" value="A" /> Ingen forskel,
+                    føles stadig behagelig.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q11" value="B" /> Stram og
+                    ubehagelig hele dagen.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q11" value="C" /> Endnu mere
+                    fedtet og skinnende.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q11" value="D" /> Tør på kinderne
+                    og fedtet i T-zonen.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 12-->
+                <div class="question">
+                  <p>Hvordan påvirker ændringer i vejret din hud?</p>
+                  <label
+                    ><input type="radio" name="q12" value="A" /> Ingen
+                    væsentlige ændringer.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q12" value="B" /> Huden føles tør
+                    og ubehagelig, især i koldt vejr.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q12" value="C" /> Bliver fedtet
+                    og skinnende i varmt og fugtigt vejr.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q12" value="D" /> Fedtet i
+                    T-zonen, men kan være tør på kinderne i koldt vejr.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 13 -->
+                <div class="question">
+                  <p>Hvordan reagerer din hud på sved?</p>
+                  <label
+                    ><input type="radio" name="q13" value="A" /> Ingen særlig
+                    reaktion.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q13" value="B" /> Bliver ofte
+                    irriteret og rød.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q13" value="C" /> Bliver endnu
+                    mere fedtet, og porerne ser større ud.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q13" value="D" /> Fedtet i
+                    T-zonen, men normal på resten af ansigtet.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 14 -->
+                <div class="question">
+                  <p>
+                    Hvordan føles din hud, når du bruger en maske eller
+                    eksfoliering?
+                  </p>
+                  <label
+                    ><input type="radio" name="q14" value="A" /> Ingen problemer
+                    og føles frisk bagefter.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q14" value="B" /> Bliver rød,
+                    irriteret og måske kløende.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q14" value="C" /> Fedtet
+                    umiddelbart efter, og får måske bumser.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q14" value="D" /> Tør i kinderne
+                    og glinsende i T-zonen.</label
+                  >
+                </div>
+
+                <!-- Spørgsmål 15 -->
+                <div class="question">
+                  <p>Hvordan føles din hud under makeup i løbet af dagen?</p>
+                  <label
+                    ><input type="radio" name="q15" value="A" /> Makeuppen
+                    holder sig pæn hele dagen.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q15" value="B" /> Bliver hurtigt
+                    tør og skæller under makeup.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q15" value="C" /> Makeup glider
+                    af, og huden bliver skinnende.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q15" value="D" /> T-zonen bliver
+                    fedtet, mens kinderne forbliver matte.</label
+                  >
+                  <br />
+                  <label
+                    ><input type="radio" name="q5" value="none" /> Jeg bruger
+                    ikke makeup.
+                  </label>
+                </div>
+
+                <div class="botton_2">
+                  <button class="button2" id="resultButton" type="submit">
+                    SE RESULTAT
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div id="result"></div>
+          </div>
+        </div>
+      </div>
+
+      <script src="test.js"></script>
+    </main>
+
+    <footer>
+      <div class="social">
+        <a href="https://www.instagram.com/c_zino/" class="fa fa-instagram"></a>
+        <a
+          href="https://www.facebook.com/celina.sguazzino/"
+          class="fa fa-facebook"
+        ></a>
+      </div>
+      <p>&#169;Celina Sguazzino</p>
+    </footer>
+
+    <script>
+      // Select the button and the parent dropdown div
+      const dropdownBtn = document.querySelector(".dropbtn");
+      const dropdown = document.querySelector(".dropdown");
+
+      // Add event listener for button click
+      dropdownBtn.addEventListener("click", function () {
+        // Toggle the class 'dropdown-open' on the parent div
+        dropdown.classList.toggle("dropdown-open");
+      });
+    </script>
+  </body>
+</html>
